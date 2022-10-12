@@ -10,5 +10,5 @@ import com.product.model.ProductList;
 public interface IProductList extends MongoRepository<ProductList, Integer> {
 	
 	ProductList getByProductId(int id);
-	void deleteByProductId(int prodId);
+
 }

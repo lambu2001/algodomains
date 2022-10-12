@@ -5,11 +5,9 @@ import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -45,16 +43,6 @@ public class ProductController {
 	public Category saveCategory(@RequestBody Category category) {
 		System.out.println("saving");
 		return catService.saveCategory(category);
-	}
-	
-	@PutMapping(path="/update")
-	public ProductList updateProduct(@RequestBody ProductList product) {
-		return service.updateProduct(product);
-	}
-	
-	@DeleteMapping(path="/delete/{id}")
-	public void deleteProduct(@PathVariable ("id") int prodId) {
-		service.deleteProduct(prodId);
 	}
 	
 	@GetMapping(path = "/product/{id}",produces = MediaType.APPLICATION_JSON_VALUE)

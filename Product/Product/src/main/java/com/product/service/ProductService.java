@@ -30,21 +30,17 @@ public class ProductService implements IProductService{
 		else
 			return null;
 	}
-
-	@Override
-	public ProductList updateProduct(ProductList product) {
-		if (product!=null)
-			return repo.save(product);
-		else
-			return null;
-	}
-
-	@Override
-	public void deleteProduct(int prodId) {
-		repo.deleteByProductId(prodId);
-		
-	}
 	
 
+	
+//	@Override
+//	public ProductList saveProduct(ProductList product) {
+//		
+//	}
+//	
+//	@Override
+//	public Optional<ProductList> getProductdetails(int id) {
+//		
+//	}
 
 }

@@ -11,6 +11,4 @@ public interface IProductService {
 	
 	ProductList saveProduct(ProductList product);
 	ProductList getProductdetails(int id);
-	ProductList updateProduct(ProductList product);
-	void deleteProduct(int prodId);
 }
