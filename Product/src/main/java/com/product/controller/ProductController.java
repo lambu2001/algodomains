@@ -80,12 +80,5 @@ public class ProductController {
 		}
 		return null;
 	}
-	@DeleteMapping("/remove/{id}")
-	public void removedetails(@PathVariable ("id") int id){
-			Object removeFromProductList;
-	
-			
-		}
-	
 
 }
